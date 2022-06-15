@@ -1,0 +1,33 @@
+
+ python3 manage.py shell
+
+from users.models import *
+
+Info.objects.create(first_name="aa",last_name="aa",email_address="aa",age=2)
+
+ Info.objects.create(first_name="kk",last_name="kk",email_address="kk",age=6)
+
+Info.objects.create(first_name="ww",last_name="ww",email_address="ww",age=9)
+
+Info.objects.all()
+
+Info.objects.last()
+
+Info.objects.first()
+
+a =Info.objects.get(id=3)
+a.las_name="Pancakes"
+a.save()
+
+c = Info.objects.get(id=2)
+c.delete()
+
+ Info.objects.all()
+
+
+
+
+
+
+
+
